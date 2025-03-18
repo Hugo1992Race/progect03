@@ -1,0 +1,114 @@
+body {
+    font-family: cursive;
+    transition: background-color 0.6s ease;
+}
+
+body.light-theme {
+    background-color: #ffffff;
+    color: #020202;
+}
+
+body.dark-theme {
+    background-color: #333333;
+    color: #8d0076;
+}
+
+.boxed-text {
+    border: 2px solid currentColor;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 4px;
+    background-color: rgb(2, 180, 250);
+    font-family: cursive;
+    background-image: url(i.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100%;   
+}
+    
+.div1 {
+    grid-column: span 6 / span 6;
+    text-align: center;
+    background-color: ;
+    border-radius: 4px;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    width: auto;
+    height: 84px;
+    border: 1px solid rgb(37, 39, 37);
+    border-radius: 15px;
+    background-image: url(realistic-white-golden-geometric-background_79603-2032.avif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-color: rgb(189, 189, 189);
+    text-align: center;
+    height: min-content;
+    width: auto;
+    border: 1px solid rgb(37, 39, 37);
+    border-radius: 15px;
+    background-image: url(realistic-white-golden-geometric-background_79603-2032.avif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.div4 {
+    grid-column: span 6 / span 6;
+    grid-row-start: 8;
+    text-align: center;
+    background-color: rgb(30, 168, 210);
+    border-radius: 4px;
+    height: 30px;
+    
+}
+
+button {
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    height: 2%;
+
+}
+button:hover {
+    color: #fff;
+      background: #474747;
+      tansition: all .3s linear;
+      -webkit-transition: all .1s linear;
+      -moz-transition: all .1s linear;
+}
+
+input, select {
+    padding: 5px;
+    margin: 0 4px;
+    border: 2px solid #0f0000;
+    border-radius: 6px;
+}
+
+.food { background-color: #55d170; }
+.transport { background-color: #749bce; }
+.entertainment { background-color: #e4ab02; }
+.other { background-color: #ca616a; }
+
+#total-amount {
+    font-weight: bold;
+}
